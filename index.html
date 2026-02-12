@@ -32,8 +32,8 @@
           alt="Triple Espresso"
         />
         <ul class="nav-links">
-          <li><a class="nav-link" href="#">Reservar una mesa</a></li>
-          <li><a class="nav-link" href="#">Contactos</a></li>
+          <li><a class="nav-link" href="#Reserva">Reservar una mesa</a></li>
+          <li><a class="nav-link" href="#Contactos">Contactos</a></li>
         </ul>
       </nav>
 
@@ -62,7 +62,84 @@
       </div>
     </header>
 
-    <main class="content"></main>
-    <footer class="footer"></footer>
+    <main class="content">
+      <div class="reservation" id="Reserva">
+        <h1 class="reservation__title">Reservar una mesa</h1>
+        <form class="form" action="/procesar-formulario" method="POST">
+          <label class="form__label" for="nombre">Nombre: *</label>
+          <input
+            class="form__input"
+            type="text"
+            id="nombre"
+            placeholder="Nombre"
+            required
+          />
+          <label class="form__label" for="comensales"
+            >Número de comensales: *</label
+          >
+          <input
+            class="form__input"
+            type="number"
+            id="comensales"
+            min="1"
+            max="8"
+            placeholder="1-8"
+            required
+          />
+          <label class="form__label" for="fecha">Fecha y hora: *</label>
+          <input
+            class="form__input"
+            type="datetime-local"
+            id="fecha"
+            required
+          />
+          <label class="form__label" for="correo"
+            >Tu correo electrónico: *</label
+          >
+          <input
+            class="form__input"
+            type="email"
+            id="correo"
+            placeholder="email@email.com"
+            required
+          />
+          <button type="submit" class="form__button">Reservar una mesa</button>
+          <div class="form__checkbox">
+            <label class="form__label">
+              <input class="form__checkbox-input" type="checkbox" required />
+              Acepto los términos de uso
+            </label>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="circle"></div>
+      <div class="footer__content">
+        <img
+          class="footer-logo"
+          src="./images/logo_coffeeshop_light.svg"
+          alt="Triple Espresso"
+        />
+        <div class="social_media" id="Contactos">
+          <h2 class="media_title">Redes Sociales</h2>
+          <ul class="networks">
+            <li>
+              <img src="./images/facebook_white.svg" alt="Logo Facebook" /><a
+                class="social_link"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <img src="./images/instagram_white.svg" alt="Logo Facebook" /><a
+                class="social_link"
+                >Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Sebastian Correa</p>
+    </footer>
   </body>
 </html>

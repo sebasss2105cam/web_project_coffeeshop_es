@@ -1,4 +1,6 @@
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Inter", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -33,6 +35,10 @@ nav ul {
   font-family: "Inter", "Arial", sans-serif;
   font-weight: 500;
   font-size: 16;
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ff976b;
 }
 
 .logo {
@@ -97,4 +103,183 @@ nav ul {
   padding-right: 80px;
   text-align: right;
   font-size: 16px;
+}
+
+.content {
+  position: relative;
+  background-color: #ffd6c5;
+  background-image: url("../images/background_reservation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: auto;
+}
+.form {
+  width: 100%;
+  max-width: 385px;
+  display: flex;
+  flex-direction: column;
+}
+.reservation__title {
+  margin-bottom: 80px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000000;
+}
+.reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.form__label {
+  margin-bottom: 8px;
+  color: #000000;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.form__input {
+  width: 100%;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 20px;
+  height: 60px;
+  padding: 0 16px;
+  margin-bottom: 32px;
+  border-radius: 4px;
+  border: 1px solid #838383;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.form__button {
+  height: 60px;
+  margin-bottom: 32px;
+  background-color: #e96e3a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.form__button:hover {
+  opacity: 0.7;
+}
+.form__checkbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.form__checkbox label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.form__checkbox-input {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: relative;
+  border: 1px solid #4f4f4f;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+}
+.form__checkbox-input:checked {
+  background-color: #e96e3a;
+  background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px 14px;
+}
+.footer {
+  position: relative;
+  background-color: #d35722;
+  padding: 60px 80px;
+  overflow: hidden;
+  z-index: 1;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 108px;
+  position: relative;
+  z-index: 1;
+}
+.circle {
+  position: absolute;
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-color: #e96e3a;
+  opacity: 0.3;
+  top: -128px;
+  left: -4px;
+  z-index: 0;
+}
+.footer-logo {
+  width: 105px;
+  height: 39px;
+}
+.social_media {
+  text-align: right;
+}
+.media_title {
+  margin-bottom: 20px;
+  color: white;
+  font-family: "Inter";
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+}
+.networks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.networks li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-end;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  list-style-type: none;
+  color: white;
+}
+.social_link {
+  transition: color 0.3s ease;
+}
+.social_link:hover {
+  color: #ffd6c5;
+}
+.networks img {
+  width: 16px;
+  height: 16px;
+}
+.copyright {
+  color: white;
+  position: relative;
+  z-index: 1;
+  font-family: "Inter";
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
 }
